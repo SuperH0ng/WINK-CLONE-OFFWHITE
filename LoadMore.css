@@ -1,0 +1,64 @@
+
+/*데스크탑*/
+@media screen and (min-width: 1024px) {
+    #loadMore {
+        font-size: 12px;
+        font-family: 'Source Code Pro', monospace;
+        cursor:pointer;
+        border: none;
+        background-color: #000000CC;
+        color: white;
+        border-radius: 4px;
+
+        margin: 24px 20px 0;
+        padding: 7px 14px;
+    }
+
+    #loadMore:hover {
+        background-color: #897F7B;
+    }
+}
+
+/*테블릿*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #loadMore {
+        font-size: 12px;
+        font-family: 'Source Code Pro', monospace;
+        cursor:pointer;
+        border: none;
+        background-color: #000000CC;
+        color: white;
+        border-radius: 4px;
+
+        margin: 64px 15px 0;
+        padding: 7px 12px;
+    }
+
+    #loadMore:hover {
+        background-color: #897F7B;
+    }
+}
+
+
+
+
+/*모바일*/
+@media screen and (max-width: 767px){
+    #loadMore {
+        font-size: 12px;
+        font-family: 'Source Code Pro', monospace;
+        cursor:pointer;
+        border: none;
+        background-color: #000000CC;
+        color: white;
+        border-radius: 4px;
+
+        margin: 56px 15px 0;
+        padding: 7px 12px;
+    }
+
+    #loadMore:hover {
+        background-color: #897F7B;
+    }
+}
+
