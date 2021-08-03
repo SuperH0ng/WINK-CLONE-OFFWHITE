@@ -1,0 +1,136 @@
+
+/*데스크탑*/
+@media screen and (min-width: 1024px) {
+    #topMenu {
+        margin: 30px -10px 0 10px;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 11px;
+    }
+
+    #topMenu {
+
+    }
+
+    #topMenu ul {
+        padding: 0;
+    }
+
+    .categories {
+        display: flex;
+        list-style: none;
+    }
+
+    .main {
+
+    }
+
+
+    #shop {
+        padding: 0 6px 13px 0;
+    }
+
+    #shop a {
+        background-color: #000000CC;
+        color: white;
+        padding: 7px 14px;
+        border-radius: 4px;
+    }
+
+    #imaginaryTV {
+        padding: 0 0 13px 0;
+    }
+
+    #imaginaryTV a {
+        background-color: #00FE01;
+        color: black;
+        padding: 7px 14px;
+        border-radius: 4px;
+    }
+
+    .rv {
+        font-size: 5px;
+        margin-left: 1px;
+        padding-bottom: 1px;
+    }
+
+    .dDM {
+        display: flex;
+        list-style: none;
+    }
+
+    .tagli {
+        padding: 0 6px 6px 0;
+    }
+
+    #menu ul li .taga{
+        padding: 7px 14px;
+        background-color: #C6B99380;
+        color: black;
+        border-radius: 4px;
+    }
+
+    .dropdownMenu {
+        display: none;
+        background-color: #E1E1E180;
+        backdrop-filter: blur(1rem);
+        border-radius: 4px;
+        margin-top: 12px
+    }
+
+    .dropdownMenu ul {
+        margin: 20px 0px 0px 20px;
+        width: 110px;
+    }
+
+    .dropdownMenu li {
+        list-style: none;
+    }
+
+    .dropdownMenu ul li {
+        margin-bottom: 20px;
+    }
+
+    .dropdownMenu a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #newArrivals > .dropdownMenu{
+        display: flex;
+    }
+
+
+
+    /*#newArrivals:hover #newArrivals > .dropdownMenu{*/
+    /*    display: flex !important;*/
+    /*}*/
+
+
+
+
+    /*.tagli > .dropdownMenu :hover .tagli > taga {*/
+    /*    display: flex;*/
+    /*}*/
+
+
+    /*.dropdownMenu {*/
+    /*    display: none;*/
+    /*}*/
+
+}
+
+/*테블릿*/
+@media screen and (min-width: 768px) and (max-width: 1023px)  {
+    #topMenu {
+        display: none;
+    }
+}
+
+
+/*모바일*/
+@media screen and (max-width: 767px) {
+    #topMenu {
+        display: none;
+    }
+}
+
