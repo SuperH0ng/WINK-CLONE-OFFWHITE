@@ -7,9 +7,6 @@
         font-size: 11px;
     }
 
-    #topMenu {
-
-    }
 
     #topMenu ul {
         padding: 0;
@@ -18,10 +15,6 @@
     .categories {
         display: flex;
         list-style: none;
-    }
-
-    .main {
-
     }
 
 
@@ -34,6 +27,12 @@
         color: white;
         padding: 7px 14px;
         border-radius: 4px;
+        text-decoration: none;
+    }
+
+
+    #shop a:hover {
+        background-color: #897F7B;
     }
 
     #imaginaryTV {
@@ -45,15 +44,24 @@
         color: black;
         padding: 7px 14px;
         border-radius: 4px;
+        text-decoration: none;
+    }
+
+    #imaginaryTV a:hover{
+        background-color: #897F7B;
+        color: white;
     }
 
     .rv {
         font-size: 5px;
         margin-left: 1px;
         padding-bottom: 1px;
+        transition: all ease 0.5s;
     }
 
-    .dDM {
+
+
+    .loadMenu {
         display: flex;
         list-style: none;
     }
@@ -67,19 +75,50 @@
         background-color: #C6B99380;
         color: black;
         border-radius: 4px;
+        text-decoration: none;
     }
 
+    /*NEW ARRIVALS는 마우스 가져다대도 밑줄 안 생겨서 나눔*/
+    #menu ul li .tag0{
+        padding: 7px 14px;
+        background-color: #C6B99380;
+        color: black;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    #menu ul li .taga:hover {
+        background-color: #E1E1E180;
+        text-decoration: underline;
+    }
+    #menu ul li .taga:hover .rv{
+        transform: rotate(180deg);
+    }
+
+    /*NEW ARRIVALS는 마우스 가져다대도 밑줄 안 생겨서 나눔*/
+    #menu ul li .tag0:hover {
+        background-color: #E1E1E180;
+    }
+    #menu ul li .tag0:hover .rv{
+        transform: rotate(180deg);
+    }
+
+
+
     .dropdownMenu {
-        display: none;
+        display: flex;
         background-color: #E1E1E180;
         backdrop-filter: blur(1rem);
         border-radius: 4px;
-        margin-top: 12px
+        margin-top: 12px;
+        margin-right: 20px;
+        padding: 20px 0 0 20px;
     }
 
     .dropdownMenu ul {
-        margin: 20px 0px 0px 20px;
         width: 110px;
+        margin-top: 0;
+        margin-right: 30px;
     }
 
     .dropdownMenu li {
@@ -95,27 +134,15 @@
         color: black;
     }
 
-    #newArrivals > .dropdownMenu{
-        display: flex;
+    .dropdownMenu a:hover {
+        text-decoration: underline;
     }
 
-
-
-    /*#newArrivals:hover #newArrivals > .dropdownMenu{*/
-    /*    display: flex !important;*/
+    /*#newArrivals a:hover #na{*/
+    /*    display: flex ;*/
     /*}*/
 
 
-
-
-    /*.tagli > .dropdownMenu :hover .tagli > taga {*/
-    /*    display: flex;*/
-    /*}*/
-
-
-    /*.dropdownMenu {*/
-    /*    display: none;*/
-    /*}*/
 
 }
 
