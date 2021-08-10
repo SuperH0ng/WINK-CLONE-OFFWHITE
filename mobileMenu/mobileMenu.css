@@ -4,13 +4,12 @@
     }
 }
 
+/*테블릿 모바일 둘 다*/
+@media screen and (max-width: 1023px) {
 
-@media screen  and (max-width: 1023px) {
-    /*and (min-width:768px)*/
-
-    body {
-        background-image: url("국민대.jpg");
-    }
+    /*body {*/
+    /*    background-image: url("국민대.jpg");*/
+    /*}*/
 
 
     #MenuBar0 {
@@ -42,6 +41,7 @@
     .top1 > .location{
         margin-right: 22px;
     }
+
 
     .top1 > .nowTime{
         margin-right: 24px;
@@ -143,11 +143,9 @@
         width: 100%;
         height: 100%;
         background-color: rgba(225,225,225,0.5);
-        /*opacity: 1;*/
         backdrop-filter: blur(1rem);
 
         display: none;
-        /*display: block;*/
     }
 
     #overlay ul {
@@ -170,18 +168,27 @@
     #ci {
         display: flex;
         list-style: none;
-        margin: 0 0 16px 0;
+        margin: 20px 0 16px 15px;
         align-items: center;
-        width: calc(100% - 30px);
-        /*margin: 0 0 6px;*/
+        justify-content: space-between;
     }
 
-    #ci >li {
-        margin-right: 6px;
+    #ciNav {
+        width: calc(100% + 15px);
     }
+
+    #ci > div {
+        display: flex;
+    }
+
+
+    /*#ci >li {*/
+    /*    margin-right: 6px;*/
+    /*}*/
 
     #shop1 {
         padding: 7px 0;
+        margin-right: 6px;
     }
 
     #shop1 a {
@@ -246,7 +253,7 @@
 
     .categories1 {
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 15px;
     }
 
 /*여기부터 하위 카테고리 공통   */
@@ -275,6 +282,20 @@
         font-size: 4px;
         margin-bottom: 2px;
 
+    }
+
+    .callTag {
+        padding: 0;
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(225,225,225,0.5);
+        backdrop-filter: blur(1rem);
+
+        display: none;
+        /*display: block;*/
     }
 
     .callBtn {
@@ -336,17 +357,14 @@
         /*position: absolute;*/
         /*padding: 0;*/
         /*margin: 0;*/
-        font-size: 0px;
-        margin: 20px 0 0 15px;
+        font-size: 0;
     }
 
     .categories1 {
         margin-left: 15px;
     }
 
-    .callTag {
-        padding: 0;
-    }
+
 
 /*여기까지 하위 카테고리 공통   */
 
@@ -354,28 +372,134 @@
 
 
 
-    .callTag {
-        /*display: none;*/
-    }
 
-    .callTag {
-        /*font-family: 'Source Code Pro', monospace;*/
-        /*font-size: 12px;*/
+
+
+
+
+
+
+
+
+/*맨 아래 부분*/
+
+
+    #custom {
+        margin: 120px 0 20px;
         position: absolute;
-        top:0;
-        left:0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(225,225,225,0.5);
-        /*opacity: 1;*/
-        backdrop-filter: blur(1rem);
-
-        display: none;
-        /*display: block;*/
     }
 
+    #custom > a {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 12px;
+        display: block;
+        text-decoration: none;
+        color: black;
+        margin: 0 0 7px;
+
+    }
+
+    #custom > a:hover {
+        text-decoration: underline;
+    }
+
+
+
+    .customBtn {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 12px;
+        border: none;
+        color: black;
+        background-color: transparent;
+        cursor:pointer;
+        padding: 0;
+        margin: 0;
+    }
+
+    #slash {
+        font-size: 12px;
+    }
+
+    .customBtn:hover {
+        text-decoration: underline;
+    }
 
 
 }
 
 
+
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+/*모바일!!!!!*/
+
+
+
+
+@media screen  and (max-width: 767px) {
+    #ci {
+        width: calc(100% - 30px);
+        margin: 0px 0 16px 0px;
+    }
+
+    .text0 {
+        margin: 20px 0 0 15px;
+    }
+
+
+    #custom {
+        bottom: 20px;
+        left: 15px;
+
+    }
+
+    .categories1 {
+    }
+}
+
+
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+/*테블릿!!!!!*/
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #ci {
+
+        width: calc(100% - 45px);
+        margin: 20px 0 16px 15px;
+    }
+
+    .text0 {
+        margin: 40px 0 0 30px;
+    }
+
+    #btnC {
+        margin: 20px 0 0 15px;
+    }
+
+    #custom {
+        bottom: 40px;
+        left: 30px;
+
+    }
+
+    .categories1 {
+        position: relative;
+        left: 15px;
+    }
+}
